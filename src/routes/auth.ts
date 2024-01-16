@@ -46,7 +46,12 @@ router.get("/statistics", auth, (req: AuthRequest, res: Response) => {
   }
 });
 // settings page can be accessed by only admin
-router.get("/settings", auth, isAdmin);
+router.get("/settings", auth, isAdmin, (req: AuthRequest, res: Response) => {
+  res.json({
+    message: "welcome to settings",
+    });
+}
+)
 
 
 // get all user and Admin can see all the user
