@@ -56,7 +56,7 @@ RBAC Authentication API is a Node.js/Express application with Role-Based Access 
 
 {
   "name": "Admin User", "Manager User1" , "Manager User2" , "Employee User1", "Employee User2"
-  "email": "admin@example.com", "manager1@example.com" ,"manager1@example.com" , "employee1@example.com" , "employee2@example.com"
+  "email": "admin@example.com", "manager1@example.com" ,"manager2@example.com" , "employee1@example.com" , "employee2@example.com"
   "password": "Admin@123", "Manager@123" , "Manager@456" , "Employee@123" , "Employee@456"
   "role": "admin", "manager" , "manager" , "employee" , "employee"
 }
