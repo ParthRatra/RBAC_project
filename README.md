@@ -77,6 +77,21 @@ Use the token received in the response for subsequent requests.
 
 
 
+## Authentication and Authorization
+
+- JWT is used for authentication.
+- Middleware functions (auth, isAdmin, isManager, isEmployee) control access based on user roles.
+- Protected routes are defined with the required middleware.
+
+
+## Environment Variables
+
+- NODE_ENV: Development or production environment.
+- PORT: Port on which the server runs.
+- MONGODB_URI: MongoDB connection string.
+- JWT_SECRET_KEY: Secret key for JWT token generation.
+
+
 
 
 
