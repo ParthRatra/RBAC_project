@@ -45,7 +45,7 @@ router.get("/statistics", auth, (req: AuthRequest, res: Response) => {
     });
   }
 });
-// settings page can be accessed by only admin
+// updated settings page can be accessed by only admin
 router.get("/settings", auth, isAdmin, (req: AuthRequest, res: Response) => {
   res.json({
     message: "welcome to settings",
