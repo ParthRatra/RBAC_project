@@ -31,20 +31,59 @@ RBAC Authentication API is a Node.js/Express application with Role-Based Access 
    ```
 
 
+## Features
+1.User signup with password hashing and validation.
+2.User login with JWT authentication.
+3.User roles: admin, manager, employee.
+3.Protected routes based on their roles like Admin,Employee,Manger can acess the #### Dashboad, Admin and Manager can access the ### Statistics , only Amdin can access the ### settings.
+4.Admin can view all users.
+5.Admin can update user roles.
+6.Admin and Manager can update user names.
+7.Admin can delete users.
+8.Password reset functionality with token generation.
+
 ## Usage
 
 ### Base Link: https://rbac-project.onrender.com/root/api/v1/
 
-1. Signup a Create User
-    ```bash
-      POST /signup
+
+### postman link :  https://gold-rocket-608863.postman.co/workspace/My-Workspace~54a9ecd8-6df2-496d-8f41-76129fe2d78d/request/21113855-eaa29ae4-5931-4c27-8b9c-3611e5a18bbe
+
+1. Signup - Create a user
+
+```
+1.POST /signup
+
 {
-  "name": "Admin User",
-  "email": "admin@example.com",
-  "password": "Admin@123",
-  "role": "admin"
+  "name": "Admin User", "Manager User1" , "Manager User2" , "Employee User1", "Employee User2"
+  "email": "admin@example.com", "manager1@example.com" ,"manager1@example.com" , "employee1@example.com" , "employee2@example.com"
+  "password": "Admin@123", "Manager@123" , "Manager@456" , "Employee@123" , "Employee@456"
+  "role": "admin", "manager" , "manager" , "employee" , "employee"
 }
-   ```
+```
+
+
+2. Login - Get an authentication token
+
+```
+POST /login
+
+{
+  "email": "admin@example.com",
+  "password": "Admin@123"
+}
+```
+Use the token received in the response for subsequent requests.
+
+
+
+
+
+
+
+
+
+
    
 
 
