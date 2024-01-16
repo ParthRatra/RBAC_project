@@ -35,7 +35,7 @@ RBAC Authentication API is a Node.js/Express application with Role-Based Access 
 - User signup with password hashing and validation.
 - User login with JWT authentication.
 - User roles: admin, manager, employee.
-- Protected routes based on their roles like Admin,Employee,Manger can acess the #### Dashboad, Admin and Manager can access the ### Statistics , only Amdin can access the ### settings.
+- Protected routes based on their roles like Admin,Employee,Manger can acess the Dashboad, Admin and Manager can access the Statistics , only Amdin can access the Settings.
 - Admin can view all users.
 - Admin can update user roles.
 - Admin and Manager can update user names.
