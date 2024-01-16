@@ -32,15 +32,15 @@ RBAC Authentication API is a Node.js/Express application with Role-Based Access 
 
 
 ## Features
-1.User signup with password hashing and validation.
-2.User login with JWT authentication.
-3.User roles: admin, manager, employee.
-3.Protected routes based on their roles like Admin,Employee,Manger can acess the #### Dashboad, Admin and Manager can access the ### Statistics , only Amdin can access the ### settings.
-4.Admin can view all users.
-5.Admin can update user roles.
-6.Admin and Manager can update user names.
-7.Admin can delete users.
-8.Password reset functionality with token generation.
+- User signup with password hashing and validation.
+- User login with JWT authentication.
+- User roles: admin, manager, employee.
+- Protected routes based on their roles like Admin,Employee,Manger can acess the #### Dashboad, Admin and Manager can access the ### Statistics , only Amdin can access the ### settings.
+- Admin can view all users.
+- Admin can update user roles.
+- Admin and Manager can update user names.
+- Admin can delete users.
+- Password reset functionality with token generation.
 
 ## Usage
 
